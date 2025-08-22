@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.box {
+  width: 1450px;
+  height: auto;
+  border: 2px solid red;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+}
+.section {
+  margin-bottom: 50px;
+}
+/* ############################################################ */
+/* Navbar styles */
+header {
+  gap: 50px;
+}
+
+.nav-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #3a3a3a;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlinks {
+  display: flex;
+  gap: 20px;
+  padding-right: 50px;
+}
+.anchor-text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+a {
+  text-decoration: none;
+}
+.firstpage-body {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-weight: bold;
+  font-size: 3.25rem;
+  color: #3a3a3a;
+}
+.paragraph {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+.btn {
+  border-radius: 41px;
+  background-color: #e02c6d;
+  text-align: center;
+  border: none;
+  width: 196px;
+  height: 44px;
+  color: white;
+}
+
+.firstpage-img {
+  width: 440px;
+  height: 414px;
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.firstpage-footer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  padding-top: 30px;
+  gap: 100px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+}
+/* ###################################################################### */
+/* second page styles */
+.secondpage-title {
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 100px;
+}
+.card-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+}
+.card {
+  width: 329px;
+  height: 476px;
+  border: 1px solid whitesmoke;
+  background-color: wheat;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.card-image {
+  width: 100%;
+  height: 50%;
+}
+.card-title {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.card-payment {
+  font-weight: lighter;
+  color: #3a3a3a;
+  font-size: 1.5rem;
+}
+.card-description {
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 80%;
+}
+/* ####################################################### */
+/* Third page design */
+.thirdpage {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+/* ############################################# */
+/* Footer styles */
+.footer-box{
+    text-align: center;
+    background-color: aliceblue;
+}
+.icon{
+    width: 50px;
+}
+
+/* ######################################################################## */
+@media screen and (max-width: 576px) {
+  .box {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    width: auto;
+  }
+  .navlinks {
+    padding-right: 0px;
+  }
+  .firstpage-body {
+    flex-direction: column-reverse;
+    width: auto;
+  }
+  .firstpage-img {
+    width: auto;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .paragraph {
+    text-align: center;
+  }
+  .btn {
+    margin: 0 75px;
+  }
+  .firstpage-footer {
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    width: auto;
+    height: auto;
+    padding: 10px 10px;
+  }
+  .firstpage-img {
+    width: 300px;
+    height: 300px;
+    padding: 10px 30px;
+  }
+  .secondpage-title {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .card-collection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .thirdpage {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .thirdpage-img{
+    width: 100%;
+  }
+}
